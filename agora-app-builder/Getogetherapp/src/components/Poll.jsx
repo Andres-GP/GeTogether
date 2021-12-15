@@ -1,12 +1,12 @@
-import React, { useState, useEffect, useConext } from 'react';
-import Modal from 'react-modal'
+import React, { useState, useEffect, useContext } from 'react';
+import Modal from 'react-modal';
 import { Line } from 'rc-progress';
 
-import { PollContext  } from './PollContext';
-import styles from 'react-native-toast-message/src/components/icon/styles';
+import { PollContext } from './PollContext';
+import styles from './Pollstyles';
 
 const Poll = () => {
-    const { question, setQuestions, answers: voteData,  setAnswers, isModalOpen, setIsModalOpen } = useConext(PollContext)
+    const { question, setQuestions, answers: voteData, setAnswers, isModalOpen, setIsModalOpen } = useContext(PollContext);
     const [totalVotes, setTotalVotes] = useState(0);
     const [voted, setVoted] = useState(false);
 
@@ -16,24 +16,25 @@ const Poll = () => {
         setVoted(false);
         setQuestions('');
         setAnswers([
-            { option: '', votes: 0 },
-            { option: '', votes: 0 },
-            { option: '', votes: 0 },
-            { option: '', votes: 0 },
+            {Option: '', votes: 0},
+            {Option: '', votes: 0},
+            {Option: '', votes: 0},
+            {Option: '', votes: 0},
         ]);
     }
 
     return (
-        <Modal 
-            isOpen={isModalOpen}
-            onRequestClose={closeModal}
-            content="Poll Modal"
-            style={styles.customStyles} 
+        <Modal
+            isOpen= {isModalOpen}
+            onRequestClose= {closeModal}
+            content= "PollModal"
+            style={styles.customStyles}
         >
-
+            <div>
+                <h1>{question}</h1>
+            </div>
         </Modal>
     )
-
 }
 
 export default Poll;
