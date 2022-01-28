@@ -487,7 +487,7 @@ func (r *queryResolver) JoinChannel(ctx context.Context, passphrase string) (*mo
 	}, nil
 }
 
-func (r *queryResolver) Share(ctx context.Context, passphrase string) (*models.ShareResponse, error) {
+func (r *queryResolver) (ctx context.Context, passphrase string) (*models.ShareResponse, error) {
 	r.Logger.Info().Str("query", "Share").Str("passphrase", passphrase).Msg("Share")
 
 	var channelData models.Channel
