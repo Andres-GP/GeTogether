@@ -32,14 +32,12 @@ export default function SecondaryButton(props: ButtonProps) {
     <Pressable
       style={[
         styles.secondaryBtn,
-        {borderColor: props.disabled ? $config.PRIMARY_COLOR + '80' : $config.PRIMARY_COLOR},
       ]}
       {...otherProps}>
       {props.text ? (
         <Text
           style={[
             styles.secondaryButtonText as StyleProp<TextStyle>,
-            {color: props.disabled ? $config.PRIMARY_COLOR + '80' : $config.PRIMARY_COLOR},
           ]}>
           {props.text}
         </Text>

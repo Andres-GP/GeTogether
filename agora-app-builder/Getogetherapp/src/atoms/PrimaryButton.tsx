@@ -32,7 +32,6 @@ export default function PrimaryButton(props: ButtonProps) {
     <Pressable
       style={[
         styles.primaryButton,
-        {backgroundColor: props.disabled ? primaryColor + '80' : primaryColor},
       ]}
       {...otherProps}>
       {props.text ? (

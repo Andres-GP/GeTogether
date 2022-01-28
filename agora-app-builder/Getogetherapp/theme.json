@@ -4,11 +4,12 @@
   },
   "primaryButton": {
     "width": "100%",
-    "backgroundColor": "#00AEFC",
+    "backgroundColor": "#292B2F",
     "borderRadius": 100,
     "maxWidth": 450,
     "minWidth": 200,
-    "minHeight": 45
+    "minHeight": 45,
+    "boxShadow": "0px 4px 15px 5px rgba(0, 0, 0, 0.080)"
   },
   "primaryButtonText": {
     "width": "100%",
@@ -21,12 +22,12 @@
   },
   "secondaryBtn": {
     "width": "100%",
-    "borderColor": "#00AEFC",
-    "borderWidth": 1,
+    "backgroundColor": "#202225",
     "borderRadius": 100,
     "maxWidth": 450,
     "minWidth": 200,
-    "minHeight": 45
+    "minHeight": 50,
+    "boxShadow": "0px 4px 15px 5px rgba(0, 0, 0, 0.080)"
   },
   "secondaryButtonText": {
     "width": "100%",
@@ -34,9 +35,9 @@
     "lineHeight": 45,
     "fontSize": 16,
     "textAlign": "center",
-    "fontWeight": "500",
+    "fontWeight": "400",
     "textAlignVertical": "center",
-    "color": "#000"
+    "color": "#fff"
   },
   "textInput": {
     "width": "100%",
@@ -44,7 +45,7 @@
     "paddingRight": 8,
     "borderColor": "#00AEFC",
     "borderRadius": 100,
-    "borderWidth": 1,
+    "borderWidth": 2,
     "textAlign": "center",
     "color": "#333333",
     "fontSize": 16,
