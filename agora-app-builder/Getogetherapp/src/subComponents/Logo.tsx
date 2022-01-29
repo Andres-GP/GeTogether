@@ -13,6 +13,7 @@ import React from 'react';
 import {Image, TouchableOpacity, StyleSheet} from 'react-native';
 import {useHistory} from '../components/Router';
 
+
 /**
  * Displays the logo.
  */
@@ -20,13 +21,7 @@ export default function Logo() {
   const history = useHistory();
 
   return (
-    <TouchableOpacity onPress={() => history.replace('/')} style={styles.marginAuto}>
-      <Image
-        source={{uri: $config.LOGO}}
-        style={styles.logo}
-        resizeMode="contain"
-      />
-    </TouchableOpacity>
+    <div></div>
   );
 }
 
